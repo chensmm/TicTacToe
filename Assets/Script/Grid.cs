@@ -23,16 +23,46 @@ namespace Assets.Script
 
         public void OnClick()
         {
-            int turn = chessboard.SetChess(x, y);
-            if (turn == 1)
+            if (belongTo == 0)
             {
-                text.text = "O";
+                int turn = chessboard.SetChess(x, y, true);
+                belongTo = turn;
+                if (turn == 1)
+                {
+
+                    text.text = "O";
+                }
+                else
+                {
+                    text.text = "X";
+                }
+                Debug.Log("Press:" + x + "," + y);
             }
             else
             {
-                text.text = "X";
+                Debug.Log("Pressed:" + x + "," + y);
             }
-            Debug.Log("Press:" + x + "," + y);
+        }
+        public void OnAIClick(int turn)
+        {
+            if (belongTo == 0)
+            {
+                belongTo = turn;
+                if (turn == 1)
+                {
+
+                    text.text = "O";
+                }
+                else
+                {
+                    text.text = "X";
+                }
+                Debug.Log("Press:" + x + "," + y);
+            }
+            else
+            {
+                Debug.Log("Pressed:" + x + "," + y);
+            }
         }
 
     }
