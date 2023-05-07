@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 395127213}
   - component: {fileID: 395127212}
   - component: {fileID: 395127211}
+  - component: {fileID: 395127214}
   m_Layer: 5
   m_Name: Chessboard
   m_TagString: Untagged
@@ -159,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 574.58813, y: -225.41193}
+  m_AnchoredPosition: {x: 400, y: -224.9}
   m_SizeDelta: {x: 450, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395127211
@@ -224,6 +225,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395127209}
   m_CullTransparentMesh: 1
+--- !u!114 &395127214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395127209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422fdbc06eacfca4f9a2221e8eca89cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridPrefab: {fileID: 2100068562797174116, guid: c3e0b3357e4604047a517dc0877ff046, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
