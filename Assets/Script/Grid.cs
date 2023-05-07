@@ -29,7 +29,6 @@ namespace Assets.Script
                 belongTo = turn;
                 if (turn == 1)
                 {
-
                     text.text = "O";
                 }
                 else
@@ -64,6 +63,9 @@ namespace Assets.Script
                 Debug.Log("Pressed:" + x + "," + y);
             }
         }
-
+        public void GameSet()
+        {
+            belongTo = 2;
+        }
     }
 }
